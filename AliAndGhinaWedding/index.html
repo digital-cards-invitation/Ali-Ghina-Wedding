@@ -500,6 +500,11 @@ window.onload = function () {
     music.play()
       .then(() => {
         console.log("🎵 Music started");
+	      	      setTimeout(() => {
+        music.pause();  
+	    music.currentTime = 0; 
+        console.log("⏹️ Music stopped after 10 seconds");
+      }, 20000); // 10 seconds
       })
       .catch(e => console.error("⚠️ Play error:", e));
 
@@ -511,6 +516,11 @@ card.addEventListener('click', () => {
     music.play()
       .then(() => {
         console.log("🎵 Music started");
+	      	      setTimeout(() => {
+        music.pause();  
+	    music.currentTime = 0; 
+        console.log("⏹️ Music stopped after 10 seconds");
+      }, 20000); // 10 seconds
       })
       .catch(e => console.error("⚠️ Play error:", e));
 
